@@ -11,6 +11,16 @@ const routes = [
     name: "Login",
     component: () => import("../views/Login.vue"),
   },
+  {
+    path: "/category/:category",
+    props: true,
+    component: () => import("../views/Category.vue"),
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import("../views/Register.vue")
+  },
 ];
 
 const router = createRouter({
